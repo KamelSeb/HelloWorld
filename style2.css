@@ -2,9 +2,77 @@ body
 {
 	padding: 0;
 	margin:  0;
+	font-family: 'Arimo', sans-serif;
+}
+/* Partie header */
+header{
+	display:  flex;
+	justify-content: space-between;
+	align-content: flex-end;
+	flex-wrap: wrap;
+	text-align: center;
+	margin: 10px 20px;
+}
+header .left, header .right{
+	display: flex;
+	flex-wrap: wrap: ;
 }
 
-#box
+header p{
+	margin-right: 10px;
+	color:  rgba(0,0,0,0.87);
+	cursor: pointer;
+}
+
+header p:hover{
+	color:  #000;
+}
+header .right svg{
+	height: 28px;
+	width:  28px;
+	margin-top: -2px;
+	margin-right: -2px;
+	color: rgba(0,0,0,0.87);
+	opacity:  1;
+
+	cursor: pointer;
+}
+
+header .user{
+	color: #FFF;
+	background: #1a73e8;
+	border:  1px solid transparent;
+	cursor: pointer;
+	font-family: Google Sans,Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+	font-weight: 500;
+	font-size: 14px;
+	letter-spacing: 0.25 px;
+	line-height: 16px;
+	margin-top:  10px;
+	padding: 10px 23px;
+	text-align: center;
+	min-width: 96px; 
+	vertical-align: middle;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+.user:hover{
+	outline: none;
+	background-color: rgba(0,97,255,0.8);
+}
+a:link{
+	text-decoration:none;
+}
+a:hover{
+	text-decoration: underline;
+}
+a:active{
+	text-decoration: none;
+	color: rgba(0,0,0,0.87);
+}
+/* Fin de la partie Header*/
+
+.box
 {
 	border: 0.1px solid #000;
 	position: absolute;
@@ -14,8 +82,9 @@ body
 	padding: 10px;
 	height:  30px; 
 	width: 500px;
-	box-shadow: 1px 1px 5px #888;
-	border-radius:  40px 
+	box-shadow: 1px 1px 5px	#a4a4a4;
+	border: none;
+	border-radius: 40px;
 }
 
 .input-box 
@@ -38,7 +107,7 @@ body
 }
 
 
-#voix
+.voix
 {
 	float:  right;
 	width: 30px;
@@ -51,14 +120,35 @@ body
 .google-logo{
 
 	position: absolute;
-	top: 35%;
+	top: 50%;
 	left:  50%;
 	transform: translate(-50%,-50%);
-	width:100px;
-	height: 97px;
+	padding-bottom: 250px;
+	height:  97px;
 	display: flex;
 	justify-content:  center; 
 	align-items:  center;
-
-
 }
+
+.button{
+	position: absolute;
+	top: 50%;
+	left:  50%;
+	transform: translate(-50%,-50%);	
+}
+
+.btn{
+	margin:  150px 10px 0 0;
+	font-size: 15px;
+	padding:  8px 15px; 
+	border: none;
+	color:  #6e6e6e;
+	border-radius:  5px;
+}
+
+.btn:hover{
+	border:  1px solid #a4a4a4;
+	border-radius: 5px;
+	flex-wrap: wrap;
+}
+
